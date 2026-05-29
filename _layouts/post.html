@@ -2,6 +2,32 @@
 layout: default
 ---
 
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": {{ page.title | jsonify }},
+    "description": {{ page.description | default: page.excerpt | strip_html | truncate: 160 | jsonify }},
+    "datePublished": "{{ page.date | date_to_xmlschema }}",
+    "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
+    "author": {
+        "@type": "Organization",
+        "name": "DeployDevOps",
+        "url": "https://deploydevops.github.io"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "DeployDevOps",
+        "url": "https://deploydevops.github.io"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ page.url | absolute_url }}"
+    },
+    "keywords": {{ page.tags | jsonify }}
+}
+</script>
+
 <article>
     <div class="post-header">
         <h1>{{ page.title }}</h1>
@@ -10,7 +36,7 @@ layout: default
             {% if page.read_time %} &middot; {{ page.read_time }} min read{% endif %}
         </div>
         <div class="tags" style="margin-top: 0.5rem;">
-            {% for tag in page.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+            {% for tag in page.tags %} <span class="tag">{{ tag }}</span> {% endfor %}
         </div>
     </div>
 
@@ -20,7 +46,7 @@ layout: default
 
     <div class="post-footer">
         <div class="cta">
-            <p>Want more? Follow <a href="https://instagram.com/deploydevops">@deploydevops</a> for terminal tips.</p>
+            <p>Want more? Follow <a href="https://instagram.com/deploydevops">@deploydevops</a> for terminal tips and AI transformation insights.</p>
             <div class="social-links" style="margin-top: 1rem;">
                 <a href="https://www.youtube.com/@DeployDevOps">YouTube</a>
                 <a href="https://tiktok.com/@deploydevops">TikTok</a>
