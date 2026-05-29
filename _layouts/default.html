@@ -33,12 +33,15 @@
     <header>
       <div class="wrap nav">
         <a class="brand" href="/"><img src="/assets/img/logo-mark.png" alt="DeployDevOps logo"><span><b>Deploy</b><span class="dd">DevOps</span></span></a>
-        <nav class="nav-links">
-          <a href="/#services">Curriculum</a>
-          <a href="/blog/">Blog</a>
-          <a href="/#contact">Waitlist</a>
-        </nav>
-        <a class="btn btn-primary" href="/#contact">Join the waitlist →</a>
+        <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+        <div class="nav-menu">
+          <nav class="nav-links">
+            <a href="/#services">Curriculum</a>
+            <a href="/blog/">Blog</a>
+            <a href="/#contact">Waitlist</a>
+          </nav>
+          <a class="btn btn-primary" href="/#contact">Join the waitlist →</a>
+        </div>
       </div>
     </header>
 
@@ -69,5 +72,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-json.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-hcl.min.js"></script>
+    <script>(function(){var t=document.querySelector('.nav-toggle');if(t)t.addEventListener('click',function(){document.querySelector('header').classList.toggle('nav-open');});})();</script>
 </body>
 </html>
