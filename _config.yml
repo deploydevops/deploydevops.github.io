@@ -25,7 +25,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      image: /assets/img/og-default.png
+      image: /assets/img/og-image.jpg
 
 plugins:
   - jekyll-seo-tag
