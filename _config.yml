@@ -1,0 +1,17 @@
+title: DeployDevOps
+description: DevOps tricks that actually work. Terminal demos, real commands, no fluff.
+url: https://deploydevops.github.io
+baseurl: ""
+
+permalink: /blog/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap

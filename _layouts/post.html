@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<article>
+    <div class="post-header">
+        <h1>{{ page.title }}</h1>
+        <div class="meta">
+            {{ page.date | date: "%B %d, %Y" }}
+            {% if page.read_time %} &middot; {{ page.read_time }} min read{% endif %}
+            {% for tag in page.tags %}<span style="color: #00d4ff; margin-left: 0.5rem;">#{{ tag }}</span>{% endfor %}
+        </div>
+    </div>
+
+    <div class="post-content">
+        {{ content }}
+    </div>
+
+    <div class="post-footer">
+        <p class="cta">
+            Want more? Follow <a href="https://instagram.com/deploydevops">@deploydevops</a> for daily terminal tips.
+        </p>
+    </div>
+</article>
