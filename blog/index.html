@@ -11,8 +11,10 @@ title: Blog — DeployDevOps
     <div class="meta">
         {{ post.date | date: "%B %d, %Y" }}
         {% if post.read_time %} &middot; {{ post.read_time }} min read{% endif %}
-        {% for tag in post.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
     </div>
     <p class="excerpt">{{ post.excerpt | strip_html | truncate: 200 }}</p>
+    <div class="tags">
+        {% for tag in post.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+    </div>
 </div>
 {% endfor %}

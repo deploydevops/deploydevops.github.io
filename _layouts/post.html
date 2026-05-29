@@ -8,7 +8,9 @@ layout: default
         <div class="meta">
             {{ page.date | date: "%B %d, %Y" }}
             {% if page.read_time %} &middot; {{ page.read_time }} min read{% endif %}
-            {% for tag in page.tags %}<span style="color: #00d4ff; margin-left: 0.5rem;">#{{ tag }}</span>{% endfor %}
+        </div>
+        <div class="tags" style="margin-top: 0.5rem;">
+            {% for tag in page.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
         </div>
     </div>
 
@@ -17,8 +19,14 @@ layout: default
     </div>
 
     <div class="post-footer">
-        <p class="cta">
-            Want more? Follow <a href="https://instagram.com/deploydevops">@deploydevops</a> for daily terminal tips.
-        </p>
+        <div class="cta">
+            <p>Want more? Follow <a href="https://instagram.com/deploydevops">@deploydevops</a> for terminal tips.</p>
+            <div class="social-links" style="margin-top: 1rem;">
+                <a href="https://www.youtube.com/@DeployDevOps">YouTube</a>
+                <a href="https://tiktok.com/@deploydevops">TikTok</a>
+                <a href="https://instagram.com/deploydevops">Instagram</a>
+                <a href="https://www.linkedin.com/company/deploydevops">LinkedIn</a>
+            </div>
+        </div>
     </div>
 </article>
