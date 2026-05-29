@@ -1,7 +1,20 @@
 title: DeployDevOps
-description: DevOps tricks that actually work. Terminal demos, real commands, no fluff.
+description: AI transformation, DevOps automation, and infrastructure consulting. Practical guides for teams adopting AI and modern infrastructure.
 url: https://deploydevops.github.io
 baseurl: ""
+lang: en
+
+author:
+  name: DeployDevOps
+  url: https://deploydevops.github.io
+
+social:
+  name: DeployDevOps
+  links:
+    - https://www.youtube.com/@DeployDevOps
+    - https://instagram.com/deploydevops
+    - https://www.linkedin.com/company/deploydevops
+    - https://tiktok.com/@deploydevops
 
 permalink: /blog/:title/
 
@@ -11,6 +24,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+      image: /assets/img/og-default.png
 
 plugins:
   - jekyll-seo-tag
