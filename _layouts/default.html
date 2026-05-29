@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% seo %}
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>></text></svg>">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
+    <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/style.css">
 
-    <!-- Organization Schema -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "DeployDevOps",
         "url": "https://deploydevops.github.io",
-        "description": "AI transformation consulting and training. Helping teams adopt AI, automate infrastructure, and ship faster.",
+        "description": "Self-paced AI & DevOps courses and hands-on training for engineering teams.",
         "sameAs": [
             "https://www.youtube.com/@DeployDevOps",
             "https://instagram.com/deploydevops",
@@ -30,12 +30,16 @@
     </script>
 </head>
 <body>
-    <header class="site-header">
-        <a href="/" class="logo"><span class="green">Deploy</span><span class="cyan">DevOps</span></a>
-        <nav>
-            <a href="/">Home</a>
-            <a href="/blog/">Blog</a>
+    <header>
+      <div class="wrap nav">
+        <a class="brand" href="/"><img src="/assets/img/logo-mark.png" alt="DeployDevOps logo"><span><b>Deploy</b><span class="dd">DevOps</span></span></a>
+        <nav class="nav-links">
+          <a href="/#services">Curriculum</a>
+          <a href="/blog/">Blog</a>
+          <a href="/#contact">Waitlist</a>
         </nav>
+        <a class="btn btn-primary" href="/#contact">Join the waitlist →</a>
+      </div>
     </header>
 
     <main class="content">
@@ -43,12 +47,27 @@
     </main>
 
     <footer>
-        <a href="/terms">Terms</a> &middot; <a href="/privacy">Privacy</a><br>
-        &copy; 2026 DeployDevOps
+      <div class="wrap">
+        <div class="foot">
+          <a class="brand" href="/"><img src="/assets/img/logo-mark.png" alt="DeployDevOps"><span><b>Deploy</b><span class="dd">DevOps</span></span></a>
+          <div class="foot-links">
+            <a href="https://www.youtube.com/@DeployDevOps">YouTube</a>
+            <a href="https://instagram.com/deploydevops">Instagram</a>
+            <a href="https://www.linkedin.com/company/deploydevops">LinkedIn</a>
+            <a href="https://tiktok.com/@deploydevops">TikTok</a>
+            <a href="/privacy">Privacy</a>
+            <a href="/terms">Terms</a>
+          </div>
+        </div>
+        <div class="copy">© 2026 DeployDevOps · Self-paced AI &amp; DevOps courses &amp; training for engineers.</div>
+      </div>
     </footer>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-bash.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-yaml.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-json.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-hcl.min.js"></script>
 </body>
 </html>
