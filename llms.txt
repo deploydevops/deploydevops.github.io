@@ -1,0 +1,11 @@
+# DeployDevOps
+
+> Practical guides on AI transformation, DevOps automation, and infrastructure for engineering teams. Hands-on tutorials with real, runnable commands, written from a senior platform engineer's perspective. The site is the content hub for AI transformation consulting and training.
+
+## Guides
+
+- [Claude Code for platform engineers](https://deploydevops.github.io/blog/claude-code-for-platform-engineers/): Wiring an AI coding agent with rules (CLAUDE.md), hooks, subagents, and MCP so it follows your infrastructure standards instead of just generating code.
+- [AI security for infrastructure teams](https://deploydevops.github.io/blog/ai-security-for-infrastructure-teams/): Treating an AI agent with shell and cloud access as a privileged identity. Indirect prompt injection, least privilege, blocking destructive commands, and audit logging.
+- [Adopting AI on your engineering team](https://deploydevops.github.io/blog/adopting-ai-on-your-engineering-team/): A rules-first rollout. Pilot one painful workflow, write standards into a shared file, measure real outcomes instead of vanity metrics, keep a human merge gate.
+- [kubectl debug: debugging pods with no shell](https://deploydevops.github.io/blog/kubectl-debug-pods-without-shell/): Using ephemeral debug containers to inspect distroless Kubernetes pods that have no shell.
+- [git bisect run: find the commit that broke your code](https://deploydevops.github.io/blog/git-bisect-run-find-bugs-automatically/): Automating binary search through git history to find a regression in log2(N) steps.

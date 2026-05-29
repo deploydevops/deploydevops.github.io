@@ -1,0 +1,7 @@
+# robots.txt for deploydevops.github.io
+# All crawlers welcome, including AI search bots (GPTBot, PerplexityBot,
+# ClaudeBot, Google-Extended). Blocking them would prevent citation in AI answers.
+User-agent: *
+Allow: /
+
+Sitemap: https://deploydevops.github.io/sitemap.xml
