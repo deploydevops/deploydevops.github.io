@@ -153,23 +153,11 @@ image: /assets/img/og-image.jpg
     .btn-primary:hover,.card:hover,.post:hover{transform:none}
   }
 </style>
+{% include org-schema.html %}
 </head>
 <body>
 
-<header>
-  <div class="wrap nav">
-    <a class="brand" href="/"><img src="/assets/img/logo-mark.png" alt="DeployDevOps logo" width="524" height="256"><span><b>Deploy</b><span class="dd">DevOps</span></span></a>
-    <button class="nav-toggle" aria-label="Toggle menu">☰</button>
-    <div class="nav-menu">
-      <nav class="nav-links">
-        <a href="#services">Curriculum</a>
-        <a href="/blog/">Blog</a>
-        <a href="#contact">Waitlist</a>
-      </nav>
-      <a class="btn btn-primary" href="#contact">Join the waitlist →</a>
-    </div>
-  </div>
-</header>
+{% include site-header.html %}
 
 <!-- HERO -->
 <section class="hero">
@@ -262,22 +250,7 @@ image: /assets/img/og-image.jpg
   </div>
 </section>
 
-<footer>
-  <div class="wrap">
-    <div class="foot">
-      <a class="brand" href="/"><img src="/assets/img/logo-mark.png" alt="DeployDevOps" width="524" height="256" loading="lazy" decoding="async"><span><b>Deploy</b><span class="dd">DevOps</span></span></a>
-      <div class="foot-links">
-        <a href="https://www.youtube.com/@DeployDevOps">YouTube</a>
-        <a href="https://instagram.com/deploydevops">Instagram</a>
-        <a href="https://www.linkedin.com/company/deploydevops">LinkedIn</a>
-        <a href="https://tiktok.com/@deploydevops">TikTok</a>
-        <a href="/privacy/">Privacy</a>
-        <a href="/terms/">Terms</a>
-      </div>
-    </div>
-    <div class="copy">© 2026 DeployDevOps · Self-paced AI &amp; DevOps courses &amp; training for engineers.</div>
-  </div>
-</footer>
+{% include site-footer.html %}
 
 <script>
 (function(){var t=document.querySelector('.nav-toggle');if(t)t.addEventListener('click',function(){document.querySelector('header').classList.toggle('nav-open');});})();
